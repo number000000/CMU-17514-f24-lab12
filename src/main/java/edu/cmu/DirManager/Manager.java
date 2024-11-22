@@ -11,14 +11,13 @@ public class Manager {
      *        -1 if the directory already exists,
      *        -2 if the path is invalid
      */
-    public int newDirectory(String path) {
+    public void newDirectory(String path) throws Exception {
         if (dirOps.checkDirectoryExists(path)) {
-            return -1;
+            throw new Exception("Directory already exists");
         } else if (!dirOps.checkPathValid(path)) {
-            return -2;
+            throw new Exception("Directory not valid");
         } else {
             dirOps.createDirectory(path);
-            return 0;
         }
     }
 }
