@@ -15,7 +15,7 @@ Inside the repository you will find three different APIs: DirManager, Library, a
 
 ## API Design principles
 Here is a list of general API design principles. Each of the violations we have included in this lab correspond to at least one of them.
-![General API Design principles](resources/GPoAD.pdf)
+![General API Design principles](GPoAD.pdf)
 
 ## Hints
 DirManager is an API designed for managing directories. The design of the `newDirectory` method in the `Manager` class has a flaw that should be identified and fixed. _For this specific flaw_ you do not need to worry about creating new objects, feel free to use them as if they already existed.
